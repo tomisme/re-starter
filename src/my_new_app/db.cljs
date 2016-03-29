@@ -1,4 +1,4 @@
 (ns my-new-app.db)
 
-(def starting-db
+(def initial-db
   {:active-page :home})

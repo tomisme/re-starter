@@ -4,7 +4,6 @@
    [reagent.dom :as dom]
    [my-new-app.subs]
    [my-new-app.handlers]
-   [my-new-app.routes :as routes]
    [my-new-app.views :as views]))
 
 (defn render-app []
@@ -12,6 +11,5 @@
     (dom/render [views/app] el)))
 
 (enable-console-print!)
-(routes/setup!)
 (rf/dispatch-sync [:setup])
 (render-app)

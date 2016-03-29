@@ -1,9 +1,14 @@
 (ns my-new-app.handlers
   (:require
    [re-frame.core :as rf]
-   [my-new-app.db :refer [starting-db]]))
+   [my-new-app.routes :as routes]
+   [my-new-app.db :as db]))
 
-(rf/register-handler :setup (fn [_ _] starting-db))
+(rf/register-handler
+  :setup
+  (fn [_ _]
+    (do (routes/setup!)
+        db/initial-db)))
 
 (rf/register-handler
   :navigate-to
