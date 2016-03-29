@@ -1,4 +1,4 @@
-(defproject games "0.1.0-SNAPSHOT"
+(defproject my-new-app "0.1.0-SNAPSHOT"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
@@ -25,21 +25,21 @@
   :cljsbuild {:builds
               [{:id "dev"
                 :source-paths ["src"]
-                :figwheel {:on-jsload "games.core/render-app"}
-                :compiler {:main       "games.core"
+                :figwheel {:on-jsload "my-new-app.core/render-app"}
+                :compiler {:main       "my-new-app.core"
                            :asset-path "js/compiled/out"
-                           :output-to  "resources/public/js/compiled/games.js"
+                           :output-to  "resources/public/js/compiled/my-new-app.js"
                            :output-dir "resources/public/js/compiled/out"
                            :source-map-timestamp true}}
                {:id "prod"
                 :source-paths ["src"]
-                :compiler {:main       "games.core"
+                :compiler {:main       "my-new-app.core"
                            :asset-path "js/compiled/out"
-                           :output-to  "resources/public/js/compiled/games.js"
+                           :output-to  "resources/public/js/compiled/my-new-app.js"
                            :optimizations :advanced}}]}
 
   :figwheel {:css-dirs ["resources/public/css"]
-             :ring-handler games.server/handler}
+             :ring-handler my-new-app.server/handler}
 
-  :repl-options {:init-ns games.repl
+  :repl-options {:init-ns my-new-app.repl
                  :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]})

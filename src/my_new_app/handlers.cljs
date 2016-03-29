@@ -1,7 +1,7 @@
-(ns games.handlers
+(ns my-new-app.handlers
   (:require
    [re-frame.core :as rf]
-   [games.db :refer [starting-db]]))
+   [my-new-app.db :refer [starting-db]]))
 
 (rf/register-handler :setup (fn [_ _] starting-db))
 

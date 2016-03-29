@@ -1,4 +1,4 @@
-(ns games.repl
+(ns my-new-app.repl
   (:use [figwheel-sidecar.repl-api :as ra]))
 
 (defn fig

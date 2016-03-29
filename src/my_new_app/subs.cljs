@@ -1,4 +1,4 @@
-(ns games.subs
+(ns my-new-app.subs
   (:require
    [re-frame.core :as rf])
   (:require-macros

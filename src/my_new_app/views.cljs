@@ -1,8 +1,8 @@
-(ns games.views
+(ns my-new-app.views
   (:require
    [re-frame.core :as rf]
-   [games.routes :as routes]
-   [games.utils :refer [log]]))
+   [my-new-app.routes :as routes]
+   [my-new-app.utils :refer [log]]))
 
 (defn home-page
   []

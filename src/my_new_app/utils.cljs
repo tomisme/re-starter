@@ -1,4 +1,4 @@
-(ns games.utils)
+(ns my-new-app.utils)
 
 (defn log
   [arg]

@@ -1,4 +1,4 @@
-(ns games.routes
+(ns my-new-app.routes
   (:require
    [re-frame.core :as rf]
    [bidi.bidi :as bidi]

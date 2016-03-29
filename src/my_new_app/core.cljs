@@ -1,11 +1,11 @@
-(ns games.core
+(ns my-new-app.core
   (:require
    [re-frame.core :as rf]
    [reagent.dom :as dom]
-   [games.subs]
-   [games.handlers]
-   [games.routes :as routes]
-   [games.views :as views]))
+   [my-new-app.subs]
+   [my-new-app.handlers]
+   [my-new-app.routes :as routes]
+   [my-new-app.views :as views]))
 
 (defn render-app []
   (if-let [el (.getElementById js/document "app")]

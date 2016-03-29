@@ -1,4 +1,4 @@
-(ns games.server)
+(ns my-new-app.server)
 
 (defn handler
   [request]
