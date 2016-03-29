@@ -19,15 +19,15 @@
 
   :profiles {:repl
              {:source-paths ["dev"]
-              :dependencies [[figwheel-sidecar "0.5.0-6" :exclusions [org.clojure/clojure]]
-                             [com.cemerick/piggieback "0.2.1" :exclusions [org.clojure/clojure]]]}}
+              :dependencies [[figwheel-sidecar "0.5.0-6"]
+                             [com.cemerick/piggieback "0.2.1"]]}}
 
   :cljsbuild {:builds
               [{:id "dev"
                 :source-paths ["src"]
                 :figwheel {:on-jsload "my-new-app.core/render-app"}
                 :compiler {:main       "my-new-app.core"
-                           :asset-path "js/compiled/out"
+                           :asset-path "/js/compiled/out" ; absolute path for dev server
                            :output-to  "resources/public/js/compiled/my-new-app.js"
                            :output-dir "resources/public/js/compiled/out"
                            :source-map-timestamp true}}
@@ -39,6 +39,7 @@
                            :optimizations :advanced}}]}
 
   :figwheel {:css-dirs ["resources/public/css"]
+             :http-server-root "public"
              :ring-handler my-new-app.server/handler}
 
   :repl-options {:init-ns my-new-app.repl
