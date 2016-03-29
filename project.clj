@@ -3,7 +3,7 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.8.34"]
+                 [org.clojure/clojurescript "1.8.40"]
                  [re-frame "0.7.0"]
                  [reagent "0.6.0-alpha"]
                  [kibu/pushy "0.3.6"]
