@@ -40,7 +40,7 @@
 
   :figwheel {:css-dirs ["resources/public/css"]
              :http-server-root "public"
-             :ring-handler my-new-app.server/handler}
+             :ring-handler my-new-app.dev-server/handler}
 
   :repl-options {:init-ns my-new-app.repl
                  :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]})
