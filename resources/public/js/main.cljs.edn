@@ -1,0 +1,3 @@
+{:require  [my-new-app.core]
+ :init-fns [my-new-app.core/render-app]
+ :compiler-options {:asset-path "js/main.out"}}

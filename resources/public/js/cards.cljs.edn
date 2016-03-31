@@ -1,0 +1,4 @@
+{:require  [my-new-app-cards.core]
+ :compiler-options {:asset-path "js/cards.out"
+                    :devcards true}
+ :init-fns [my-new-app-cards.core/main]}
