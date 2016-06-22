@@ -1,4 +1,4 @@
-(ns my-new-app.subs
+(ns app.subs
   (:require
    [re-frame.core :as rf])
   (:require-macros

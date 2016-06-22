@@ -1,10 +1,10 @@
-(ns my-new-app.core
+(ns app.core
   (:require
    [re-frame.core :as rf]
    [reagent.dom :as dom]
-   [my-new-app.subs]
-   [my-new-app.handlers]
-   [my-new-app.views :as views]))
+   [app.subs]
+   [app.handlers]
+   [app.views :as views]))
 
 (defn render-app []
   (if-let [el (.getElementById js/document "app")]

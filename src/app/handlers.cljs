@@ -1,8 +1,8 @@
-(ns my-new-app.handlers
+(ns app.handlers
   (:require
    [re-frame.core :as rf]
-   [my-new-app.routes :as routes]
-   [my-new-app.db :as db]))
+   [app.routes :as routes]
+   [app.db :as db]))
 
 (rf/register-handler
   :setup

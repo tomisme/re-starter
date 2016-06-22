@@ -1,4 +1,4 @@
-(ns my-new-app.routes
+(ns app.routes
   (:require
    [re-frame.core :as rf]
    [bidi.bidi :as bidi]

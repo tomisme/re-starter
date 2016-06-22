@@ -1,7 +1,7 @@
-(ns my-new-app.views
+(ns app.views
   (:require
    [re-frame.core :as rf]
-   [my-new-app.routes :as routes]))
+   [app.routes :as routes]))
 
 (defn home-page
   []
