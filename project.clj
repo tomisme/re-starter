@@ -10,7 +10,7 @@
                  [kibu/pushy "0.3.6"]
                  [bidi "2.0.4"]]
 
-  :plugins [[lein-figwheel "0.5.4-2"]
+  :plugins [[lein-figwheel "0.5.4-4"]
             [lein-cljsbuild "1.1.3"]]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled"
