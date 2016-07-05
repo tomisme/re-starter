@@ -29,7 +29,7 @@
                 :source-paths ["src/app"]
                 :figwheel {:on-jsload "app.core/render-app"}
                 :compiler {:main       "app.core"
-                           :asset-path "/js/compiled/out" ; absolute path for dev server
+                           :asset-path "js/compiled/out"
                            :output-to  "resources/public/js/compiled/app.js"
                            :output-dir "resources/public/js/compiled/out"
                            :source-map-timestamp true}}
